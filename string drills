@@ -1,23 +1,28 @@
-function add(num1, num2) {
-  return num1 + num2;
-}
-
-function subtract(num1, num2) {
-  return num1 - num2;
+function shouter(whatToShout) {
+  return whatToShout.toUpperCase() + '!!!'
 }
 
 
-function testAdd() {
-   var num1 = 5;
-   var num2 = 10;
-   var expected = 15;
+/* From here down, you are not expected to 
+   understand.... for now :)  
+   
+   
+   Nothing to see here!
+   
+*/
 
-    if (add(num1, num2) == expected) {
-      console.log('SUCCESS: `testAdd` is working');
-      return true;
-    }
-   else {
-      console.log('FAILURE: `testAdd` is not working');
-      return false;
-   }
+
+// tests
+
+function testShouter() {
+  var whatToShout = 'fee figh foe fum';
+  var expected = 'FEE FIGH FOE FUM!!!';
+  if (shouter(whatToShout) === expected) {
+    console.log('SUCCESS: `shouter` is working');
+  }
+  else {
+    console.log('FAILURE: `shouter` is not working');
+  }
 }
+
+testShouter();
