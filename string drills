@@ -1,0 +1,23 @@
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+function subtract(num1, num2) {
+  return num1 - num2;
+}
+
+
+function testAdd() {
+   var num1 = 5;
+   var num2 = 10;
+   var expected = 15;
+
+    if (add(num1, num2) == expected) {
+      console.log('SUCCESS: `testAdd` is working');
+      return true;
+    }
+   else {
+      console.log('FAILURE: `testAdd` is not working');
+      return false;
+   }
+}
